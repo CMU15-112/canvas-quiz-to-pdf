@@ -1,9 +1,13 @@
 import csv
 
 header = """
+\\UseRawInputEncoding
 \\documentclass{article}
 \\usepackage{fullpage}
-\\usepackage{minted}
+\\usepackage{listings}
+\\lstset{
+   breaklines=true,
+   basicstyle=\\ttfamily}
 
 \\pagestyle{empty}
 \\begin{document}
@@ -17,9 +21,9 @@ q_template = """
 
 \\noindent Answer:
 
-\\begin{minted}{python}
+\\begin{lstlisting}
 %s
-\\end{minted}
+\\end{lstlisting}
 """
 
 footer = """

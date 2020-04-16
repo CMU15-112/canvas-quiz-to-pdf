@@ -10,7 +10,7 @@ After students take the canvas quiz, click on "Quiz Statistics" on the quiz sett
 
 ### Canvas -> LaTeX
 
-Run `python3 convert.py`.  This will fill up your output directory with `.tex` files of each submission.
+Run `python3 convert.py`.  This will produce a .tex file containing all the student submissions.
 
 ### LaTeX -> PDF
 
